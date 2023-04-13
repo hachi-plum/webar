@@ -2,17 +2,22 @@
 <html>
     <head>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
+    <script src="./move.js"></script>
     </head>
     <body>
         <model-viewer
             src="assets/cat.glb"
+            id="cat-model"
             alt="3d model"
             camera-controls
             ar
             animation-name="walk"
             autoplay
             loop
+            ar-placement="floor"
+            ar-anchor="camera"
             style="width: 50%; height: 100vh; display: inline-block;">
         </model-viewer>
+        <button onclick="moveModel()">Move Model</button>
     </body>
 </html>
