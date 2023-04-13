@@ -4,5 +4,6 @@ model.addEventListener('click', () =>{
     const x = Math.random() * 4 - 2;
     const y = Math.random() * 4 - 2;
     const z = Math.random() * 4 - 2;
-    model.cameraControls.target = `${x} ${y} ${z}`;
+    // 3Dモデルを新しい位置に移動する
+    model.setAttribute('position', `${x} ${y} ${z}`);
 });
